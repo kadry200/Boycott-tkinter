@@ -15,10 +15,14 @@ def click1():
          else:
                label3["text"]="Output: thank you for using the application"
                file.write(name)
+
+def click2():
+        window1.destroy()
+        import win1
         
 
 def click3():
-     window1.destroy()
+        window1.destroy()
 
 window1=Tk()
 window1.geometry("800x600")
@@ -39,7 +43,7 @@ Button1.place(x=170,y=180,height=30)
 label3=Label(window1,text="Output: ",font=("aria",14),bg="light yellow",fg="black")
 label3.place(x=20,y=250)
 
-Button2=Button(window1,text="pervious page",bg="gold",font="aria",width=15,command=click3)
+Button2=Button(window1,text="pervious page",bg="gold",font="aria",width=15,command=click2)
 Button2.place(x=0,y=320)
 
 
