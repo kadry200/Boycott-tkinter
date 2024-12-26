@@ -4,18 +4,17 @@ from PIL import Image, ImageTk
 # function to search in a text file
 def click1():
     Name=Entry1.get().capitalize()
-    try:
-      int(Name)  
-      label3["text"]="Output: this is a wrong please enter a string"
-    except ValueError:
-    
-     with open (r"C:\Users\Kadry\Downloads\Boycott Brands.txt","r") as file:
+    if  Name.isdigit():
+        label3["text"]="Output: please enter a string"
+    else:
+     
+      with open (r"C:\Users\Kadry\Downloads\Boycott Brands.txt","r") as file:
          boycott=file.read()
-              
-    if Name in boycott :
+                
+      if Name in boycott :
                
            label3["text"]="Output: This is a Boycott"
-    else:
+      else:
            label3["text"]="Output: This isn't a Boycott"   
 #function to go to next page
 def click2():
