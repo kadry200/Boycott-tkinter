@@ -14,7 +14,7 @@ def click1():
               label3["text"]="Output: thank you for using the application"
          else:
                label3["text"]="Output: thank you for using the application"
-               file.write(name)
+               file.write("\n"+name)
 
 def click2():
         window1.destroy()
