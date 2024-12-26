@@ -36,7 +36,7 @@ label1.place(x=250,y=60)
 Entry1=Entry(window1,font=("aria",16),bg="old lace",width=40)
 Entry1.place(x=125,y=130,height=40)
 
-Button1=Button(window1,width=50,text="Search",bg="gold",command=click1)
+Button1=Button(window1,width=50,text="Add",bg="gold",command=click1)
 Button1.place(x=170,y=180,height=30)
 
 

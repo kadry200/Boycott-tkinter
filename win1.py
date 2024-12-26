@@ -11,10 +11,10 @@ def click1():
       with open (r"C:\Users\Kadry\Downloads\Boycott Brands.txt","r") as file:
          boycott=file.read()
                 
-      if Name in boycott :
+         if Name in boycott :
                
            label3["text"]="Output: This is a Boycott"
-      else:
+         else:
            label3["text"]="Output: This isn't a Boycott"   
 #function to go to next page
 def click2():
